@@ -24,7 +24,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
-                    <h2>Add Numbers</h2>
+                    <h2>Calculate Percentage</h2>
                     <hr class="star-primary">
                 </div>
             </div>
@@ -35,8 +35,10 @@
                     <form name="sentMessage" id="contactForm" action="/add_numbers" method="POST">
                         <div class="row control-group">
                             <div class="form-group col-xs-12 floating-label-form-group controls">
-                                <label for="name">Enter Numbers</label>
-                                <input type="text" name="text" class="form-control" placeholder="Please Enter Numbers" name="my-form" id="name" required data-validation-required-message="Please enter your name.">
+                                <label for="name">Enter Number</label>
+                                <input type="text" name="text" class="form-control" placeholder="Please Enter A Number" name="my-form" id="name" required data-validation-required-message="Please enter a number.">
+                                <label for="percentage">Percentage</label>
+                                <input type="text" name="percentage" class="form-control" placeholder="Percent" name="my-form" id="name" required data-validation-required-message="Please enter a percent value.">
                                 <p class="help-block text-danger"></p>
                             </div>
                         </div> 
@@ -51,7 +53,7 @@
                         </div>
                           <div class="row">
                 <div class="col-lg-12 text-center">
-                    <h2>Answer = {{result}}</h2>
+                    <h2>Percentage = {{result}}</h2>
                     <hr class="star-primary">
                 </div>
             </div>
