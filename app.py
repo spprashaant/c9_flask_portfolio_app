@@ -18,12 +18,12 @@ def profile(name):
   return render_template('index.html', name=name)
 
 
-@app.route('/add_numbers', methods=['GET','POST'])
+@app.route('/percentage', methods=['GET','POST'])
 def add_numbers_post():
     # --> ['5', '6', '8']
     # print(type(request.form['text']))
     if request.method == 'GET':
-      return render_template('add_numbers.html')
+      return render_template('percentage.html')
     elif request.method == 'POST':
           print(request.form['text'])
           percentage = 0
@@ -33,7 +33,7 @@ def add_numbers_post():
             #for str_num in request.form['text'].split():
             #  total += int(str_num)
             percentage = (number*percent)/100
-            return render_template('add_numbers.html', result=str(percentage))
+            return render_template('percentage.html', result=str(percentage))
           except ValueError:
             return "Easy now! Let's keep it simple! 2 numbers with a space between them please"
 
