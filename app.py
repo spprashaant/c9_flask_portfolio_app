@@ -30,12 +30,12 @@ def add_numbers_post():
   	      try:
             number = int(str(request.form['text']))
             percent = int(str(request.form['percentage']))
-  	      	#for str_num in request.form['text'].split():
-  	      	#	total += int(str_num)
+  	        #for str_num in request.form['text'].split():
+  	        #	total += int(str_num)
             percentage = (number/percent)*100
-  	      	return render_template('add_numbers.html', result=str(percentage))
+  	        return render_template('add_numbers.html', result=str(percentage))
   	      except ValueError:
-  	      	return "Easy now! Let's keep it simple! 2 numbers with a space between them please"
+  	        return "Easy now! Let's keep it simple! 2 numbers with a space between them please"
 
 
 @app.route('/shopping_list', methods=['GET','POST'])
