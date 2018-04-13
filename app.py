@@ -25,7 +25,7 @@ def add_numbers_post():
 	  if request.method == 'GET':
 	  	return render_template('add_numbers.html')
 	  elif request.method == 'POST':
-  	      #print(request.form['text'].split())
+  	      print(request.form['text'])
   	      percentage = 0
   	      try:
             number = int(str(request.form['text']))
