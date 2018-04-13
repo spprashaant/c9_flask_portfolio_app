@@ -4,21 +4,6 @@
 
 {% block content %}
 
-  <div class="container" id="maincontent" tabindex="-1">
-            <div class="row">
-                <div class="col-lg-12">
-                    <!-- <img class="img-responsive" src="/static/img/add.png" alt=""> -->
-                    <div class="intro-text">
-                        <h1 class="name"></h1>
-                        <hr class="star-light">
-                        <span class="skills">Let's calculate the percentage!</span>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </header>
-
-
 <!-- Contact Section -->
     <section id="contact">
         <div class="container">
@@ -32,7 +17,7 @@
                 <div class="col-lg-8 col-lg-offset-2">
                     <!-- To configure the contact form email address, go to mail/contact_me.php and update the email address in the PHP file on line 19. -->
                     <!-- The form should work on most web servers, but if the form is not working you may need to configure your web server differently. -->
-                    <form name="sentMessage" id="contactForm" action="/add_numbers" method="POST">
+                    <form name="sentMessage" id="contactForm" action="/percentage" method="POST">
                         <div class="row control-group">
                             <div class="form-group col-xs-12 floating-label-form-group controls">
                                 <label for="name">Enter Number</label>
@@ -61,6 +46,19 @@
         </div>
     </div>
 </section>
+
+<div class="container" id="maincontent" tabindex="-1">
+            <div class="row">
+                <div class="col-lg-12">
+                    <!-- <img class="img-responsive" src="/static/img/add.png" alt=""> -->
+                    <div class="intro-text">
+                        <h1 class="name"></h1>
+                        <hr class="star-light">
+                        <span class="skills">Let's calculate the percentage!</span>
+                    </div>
+                </div>
+            </div>
+        </div>
 {% endblock %}
 
 {% block footer%}
