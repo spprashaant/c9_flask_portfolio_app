@@ -28,8 +28,8 @@ def add_numbers_post():
   	      #print(request.form['text'].split())
   	      percentage = 0
   	      try:
-            number = int(request.form['text'])
-            percent = int(request.form['percentage'])
+            number = int(str(request.form['text']))
+            percent = int(str(request.form['percentage']))
   	      	#for str_num in request.form['text'].split():
   	      	#	total += int(str_num)
             percentage = (number/percent)*100
